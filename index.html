@@ -1,13 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web to Lead Form</title>
-
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,37 +14,34 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
             padding: 20px;
         }
 
         .logo-container {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .logo-container img {
-            max-width: 200px;
+            max-width: 150px;
         }
 
         .form-container {
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px 30px;
+            padding: 20px 40px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 600px;
-            margin: 0 auto;
         }
 
         h1 {
             text-align: center;
             color: #4a4a8a;
-            margin-bottom: 15px;
-            font-size: 24px;
+            margin-bottom: 20px;
         }
 
         label {
@@ -55,7 +49,6 @@
             font-weight: bold;
             margin-bottom: 5px;
             color: #555;
-            font-size: 14px;
         }
 
         input, textarea, select {
@@ -74,12 +67,23 @@
             cursor: pointer;
             font-size: 16px;
             border-radius: 5px;
-            padding: 12px 20px;
+            padding: 10px 15px;
             transition: background-color 0.3s ease;
         }
 
         input[type="submit"]:hover {
             background-color: #3a3a6d;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-container select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
         }
 
         .thank-you-container {
@@ -93,29 +97,27 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            font-size: 24px;
+            font-size: 28px;
             text-align: center;
         }
 
         .thank-you-content {
             display: flex;
-            flex-direction: column;
             align-items: center;
         }
 
         .thank-you-text {
-            margin-bottom: 20px;
-            font-size: 30px;
-            font-weight: bold;
+            margin-right: 20px;
+            font-size: 36px;
         }
 
         .thank-you-image {
-            max-width: 350px;
-            max-height: 350px;
+            max-width: 300px;
+            max-height: 300px;
         }
 
         .thank-you-container h2 {
-            font-size: 40px;
+            font-size: 48px;
             margin-bottom: 10px;
         }
 
@@ -123,48 +125,10 @@
             font-size: 24px;
             margin-top: 5px;
         }
-
-        /* Media Query for larger screens */
-        @media (min-width: 1200px) {
-            .thank-you-container {
-                font-size: 28px;
-            }
-
-            .thank-you-text {
-                font-size: 40px;
-            }
-
-            .thank-you-image {
-                max-width: 450px;
-            }
-        }
-
-        /* Media Query for smaller screens */
-        @media (max-width: 768px) {
-            .thank-you-container {
-                font-size: 22px;
-            }
-
-            .thank-you-text {
-                font-size: 28px;
-            }
-
-            .thank-you-image {
-                max-width: 250px;
-            }
-        }
     </style>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <script>
         function redirectToThankYou(event) {
-            event.preventDefault(); // Prevent the form from submitting
-
-            // Display the thank-you message
+            event.preventDefault(); // Prevent default form submission
             const thankYouPage = document.createElement('div');
             thankYouPage.className = 'thank-you-container';
             thankYouPage.innerHTML = `
@@ -178,10 +142,9 @@
             `;
             document.body.appendChild(thankYouPage);
 
-            // Redirection happens immediately (no delay)
             setTimeout(() => {
                 window.location.href = 'https://smartlabtech.com/';
-            }, 2000); // Slight delay to allow the Thank You message to show
+            }, 5000);
         }
     </script>
 </head>
@@ -256,3 +219,6 @@
 
 </body>
 </html>
+apps-fileview.texmex_20241205.01_p4
+new web to lead.html
+Displaying new web to lead.html.
